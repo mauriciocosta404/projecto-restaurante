@@ -20,7 +20,7 @@ document.querySelector('.close-icon-container').addEventListener('click',(event)
     document.querySelector('#search-form').classList.remove('active');
 });
 
-var swiper = new Swiper(".home-slider", {
+/*var swiper = new Swiper(".home-slider", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -32,4 +32,6 @@ var swiper = new Swiper(".home-slider", {
       clickable: true,
     },
     loop:true,
-  });
+  });*/
+
+  
