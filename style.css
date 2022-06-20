@@ -451,3 +451,49 @@ header .logo .logo-icon{
     font-size: 2.5rem;
     font-weight: bolder;
  }
+
+ .review-slider .wrapper{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+    gap:1.5rem;
+ }
+
+ .review .slide{
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0,0,0,0.1);
+    border-radius: .3rem;
+    position:relative;
+ }
+
+ .review .slide .fa-quote-right{
+    position:absolute;
+    top:2rem;right:2rem;
+    font-size: 6rem;
+    color:#ccc;
+ }
+ .review .slide .user{
+    display:flex;
+    gap:1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+ }
+ .review .slide .user img{
+    width:7rem;
+    border-radius:50%;
+    object-fit: cover;
+ }
+ .review .slide .user h3{
+    color:var(--black);
+    font-size:2rem;
+    padding-bottom: .5rem;
+ }
+ .review .slide .user .stars{
+    color:var(--green);
+    font-size: 1.3rem;
+ }
+ .review .slide p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+ }
