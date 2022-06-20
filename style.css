@@ -162,58 +162,7 @@ header .logo .logo-icon{
     right:3rem;
     font-size: 5rem;
 }
-
- /*--------------------medias queries------------------------------------*/
- @media (max-width:991px){
-    html{
-        font-size: 55%;
-    }
-    header{
-        padding: 1rem 2rem;
-    }
-    section{
-        padding: 2rem;
-    }
- }
-
- @media (max-width:768px){
-    
-    .icons{
-        display:flex;
-    }
-    header .icons #menu-bars{
-        display: inline-block;
-    }
-    header .navbar{
-        position: absolute;
-        top: 100%; left: 0;right: 0;
-        background: #fff;
-        border-top: .1rem solid rgba(0,0,0,0.2);
-        border-bottom: .1rem solid rgba(0,0,0,0.2);
-        padding: 1rem;
-        clip-path: polygon(0 0,100% 0,100% 0,0 0);
-    }
-
-    header .navbar.active{
-        clip-path: polygon(0 0,100% 0, 100% 100%,0% 100%);
-    }
-
-    header .navbar a{
-        display: block;
-        padding: 1.5rem;
-        margin: 1rem;
-        font-size: 2rem;
-        background-color: #eee;
-    }
-    #search-form #search-box{
-        width:90%;
-        margin:0 1rem;
-    }
-    .home .home-slider .slide .content h3{
-        font-size:rem; 
-     }
- }
-/*--------------------medias queries------------------------------------*/
+/*------------------------------------------home---------------------------------------*/
  .home .home-slider .slide{
     display:flex;
     align-items:center;
@@ -322,16 +271,6 @@ header .logo .logo-icon{
     margin-right: 1rem;
     font-size: 2.5rem;   
 }
-
-@media (max-width:991px){
-    html{
-        font-size: 50%;
-    }
-    .dishes .box-container .box img{
-        height:auto;
-        width:100%;
-    } 
- }
 
  .about .row{
     display:flex;
@@ -457,7 +396,6 @@ header .logo .logo-icon{
     grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
     gap:1.5rem;
  }
-
  .review .slide{
     padding:2rem;
     box-shadow: var(--box-shadow);
@@ -496,4 +434,118 @@ header .logo .logo-icon{
     font-size: 1.5rem;
     line-height: 1.8;
     color: var(--light-color);
+ }
+
+
+ .order form{
+    max-width:90rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,0.2);
+    background:#fff;
+    padding:1.5rem;
+    margin:0 auto;
+ }
+ .order form .input-box{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .order form .input-box .input{
+    width:49%;
+ }
+ .order form .input-box .input span{
+    display:block;
+    padding:.5rem 0;
+    font-size:1.5rem;
+    color:var(--light-color);
+ }
+
+ .order form .input-box .input input,
+ .order form .input-box .input textarea{
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.5rem;
+    color:var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width:100%;
+ }
+ .order form .input-box .input input:focus,
+ .order form .input-box .input textarea:focus{
+    border:.1rem solid var(--green);
+ }
+
+ .order form .input-box .input textarea{
+    resize: none;
+    height:20rem;
+ }
+ .order form .btn{
+    margin-top: 0;
+ }
+
+/*---------------------------medias-queries------------------------------*/
+
+ @media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+ }
+
+ @media (max-width:768px){
+    
+    .icons{
+        display:flex;
+    }
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0;right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,0.2);
+        border-bottom: .1rem solid rgba(0,0,0,0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0,100% 0, 100% 100%,0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background-color: #eee;
+    }
+    #search-form #search-box{
+        width:90%;
+        margin:0 1rem;
+    }
+    .home .home-slider .slide .content h3{
+        font-size:rem; 
+     }
+ }
+
+ @media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .dishes .box-container .box img{
+        height:auto;
+        width:100%;
+    }
+    .order form .input-box .input{
+        width:100%;
+     } 
  }
